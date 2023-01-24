@@ -6,19 +6,13 @@ class Person {
 
   static showAge(personA, personB, personC) {
     if (personA.age > personB.age && personA.age > personC.age) {
-      console.log(
-        `L'eta di ${persone[0].name} è maggiore dell'eta di ${persone[1].name} e di ${persone[2].name} !`
-      );
+      return `L'eta di ${persone[0].name} è maggiore dell'eta di ${persone[1].name} e di ${persone[2].name} !`;
     } else if (personB.age > personA.age && personB.age > personC.age) {
-      console.log(
-        `L'eta di ${persone[1].name} è maggiore dell'eta di ${persone[0].name} e di ${persone[2].name} !`
-      );
+      return `L'eta di ${persone[1].name} è maggiore dell'eta di ${persone[0].name} e di ${persone[2].name} !`;
     } else if (personC.age > personA.age && personC.age > personB.age) {
-      console.log(
-        `L'eta di ${persone[2].name} è maggiore dell'eta di ${persone[0].name} e di ${persone[1].name} !`
-      );
+      return `L'eta di ${persone[2].name} è maggiore dell'eta di ${persone[0].name} e di ${persone[1].name} !`;
     } else {
-      console.log("Le età di entrambe le persone sono uguali!");
+      return "Le età di entrambe le persone sono uguali!";
     }
   }
 }
